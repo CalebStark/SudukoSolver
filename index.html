@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suduko Solver</title>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <header>
+        <h1>Suduko Solver</h1>
+        <nav>
+            <a src="#">About Us</a>
+            <a src="#">Classic Suduko</a>
+            <a src="#">Chess Suduko</a>
+            <a src="#">Thermomiter Suduko</a>
+        </nav>
+    </header>
+    <main>
+        <section class="descriptionSection">
+            <h2>Welcome to suduko solver follow the instructions below to begin.</h2>
+            <ol>
+                <li>Input the current position to solve for by click a number and the click the square the the number is located in.</li>
+                <li>Click Solve current position to show one move ahead.</li>                        
+                <li>Click Solve Puzzle to complete the puzzle.</li>
+                <li>Now transfer over the solved puzzle to your app and see how well it worked.</li>
+            </ol>
+            <p>If you input a puzzle with multiple possible ansewers the output will be Invaid Puzzle</p>
+        </section>
+        <div class="puzzleBoard">
+            <div class="mainSquare">
+                <section id="largeSquare" class="threeXThree1">
+                    <div class="col1 row1" id="miniSquare">
+                        <input type="number" min="1" max="9" maxlength="1" id="squareInput">
+                    </div>
+                    <div class="col2 row1" id="miniSquare"></div>
+                    <div class="col3 row1" id="miniSquare"></div>
+                    <div class="col1 row2" id="miniSquare"></div>
+                    <div class="col2 row2" id="miniSquare"></div>
+                    <div class="col3 row2" id="miniSquare"></div>
+                    <div class="col1 row3" id="miniSquare"></div>
+                    <div class="col2 row3" id="miniSquare"></div>
+                    <div class="col3 row3" id="miniSquare"></div>
+                </section>
+                <section id="largeSquare" class="threeXThree2">
+                    <div class="col4 row1" id="miniSquare"></div>
+                    <div class="col5 row1" id="miniSquare"></div>
+                    <div class="col6 row1" id="miniSquare"></div>
+                    <div class="col4 row2" id="miniSquare"></div>
+                    <div class="col5 row2" id="miniSquare"></div>
+                    <div class="col6 row2" id="miniSquare"></div>
+                    <div class="col4 row3" id="miniSquare"></div>
+                    <div class="col5 row3" id="miniSquare"></div>
+                    <div class="col6 row3" id="miniSquare"></div>
+                </section>
+                <section id="largeSquare" class="threeXThree3">
+                    <div class="col7 row1" id="miniSquare"></div>
+                    <div class="col8 row1" id="miniSquare"></div>
+                    <div class="col9 row1" id="miniSquare"></div>
+                    <div class="col7 row2" id="miniSquare"></div>
+                    <div class="col8 row2" id="miniSquare"></div>
+                    <div class="col9 row2" id="miniSquare"></div>
+                    <div class="col7 row3" id="miniSquare"></div>
+                    <div class="col8 row3" id="miniSquare"></div>
+                    <div class="col9 row3" id="miniSquare"></div>
+                </section>
+                <section id="largeSquare" class="threeXThree4">
+                    <div class="col1 row4" id="miniSquare"></div>
+                    <div class="col2 row4" id="miniSquare"></div>
+                    <div class="col3 row4" id="miniSquare"></div>
+                    <div class="col1 row5" id="miniSquare"></div>
+                    <div class="col2 row5" id="miniSquare"></div>
+                    <div class="col3 row5" id="miniSquare"></div>
+                    <div class="col1 row6" id="miniSquare"></div>
+                    <div class="col2 row6" id="miniSquare"></div>
+                    <div class="col3 row6" id="miniSquare"></div>
+                </section>
+                <section id="largeSquare" class="threeXThree5">
+                    <div class="col4 row4" id="miniSquare"></div>
+                    <div class="col5 row4" id="miniSquare"></div>
+                    <div class="col6 row4" id="miniSquare"></div>
+                    <div class="col4 row5" id="miniSquare"></div>
+                    <div class="col5 row5" id="miniSquare"></div>
+                    <div class="col6 row5" id="miniSquare"></div>
+                    <div class="col4 row6" id="miniSquare"></div>
+                    <div class="col5 row6" id="miniSquare"></div>
+                    <div class="col6 row6" id="miniSquare"></div>
+                </section>
+                <section id="largeSquare" class="threeXThree6">
+                    <div class="col7 row4" id="miniSquare"></div>
+                    <div class="col8 row4" id="miniSquare"></div>
+                    <div class="col9 row4" id="miniSquare"></div>
+                    <div class="col7 row5" id="miniSquare"></div>
+                    <div class="col8 row5" id="miniSquare"></div>
+                    <div class="col9 row5" id="miniSquare"></div>
+                    <div class="col7 row6" id="miniSquare"></div>
+                    <div class="col8 row6" id="miniSquare"></div>
+                    <div class="col9 row6" id="miniSquare"></div>
+                </section>
+                <section id="largeSquare" class="threeXThree7">
+                    <div class="col1 row7" id="miniSquare"></div>
+                    <div class="col2 row7" id="miniSquare"></div>
+                    <div class="col3 row7" id="miniSquare"></div>
+                    <div class="col1 row8" id="miniSquare"></div>
+                    <div class="col2 row8" id="miniSquare"></div>
+                    <div class="col3 row8" id="miniSquare"></div>
+                    <div class="col1 row9" id="miniSquare"></div>
+                    <div class="col2 row9" id="miniSquare"></div>
+                    <div class="col3 row9" id="miniSquare"></div>
+                </section>
+                <section id="largeSquare" class="threeXThree8">
+                    <div class="col4 row7" id="miniSquare"></div>
+                    <div class="col5 row7" id="miniSquare"></div>
+                    <div class="col6 row7" id="miniSquare"></div>
+                    <div class="col4 row8" id="miniSquare"></div>
+                    <div class="col5 row8" id="miniSquare"></div>
+                    <div class="col6 row8" id="miniSquare"></div>
+                    <div class="col4 row9" id="miniSquare"></div>
+                    <div class="col5 row9" id="miniSquare"></div>
+                    <div class="col6 row9" id="miniSquare"></div>
+                </section>
+                <section id="largeSquare" class="threeXThree9">
+                    <div class="col7 row7" id="miniSquare"></div>
+                    <div class="col8 row7" id="miniSquare"></div>
+                    <div class="col9 row7" id="miniSquare"></div>
+                    <div class="col7 row8" id="miniSquare"></div>
+                    <div class="col8 row8" id="miniSquare"></div>
+                    <div class="col9 row8" id="miniSquare"></div>
+                    <div class="col7 row9" id="miniSquare"></div>
+                    <div class="col8 row9" id="miniSquare"></div>
+                    <div class="col9 row9" id="miniSquare"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a src="#">About Us</a>
+            <a src="#">Classic Suduko</a>
+            <a src="#">Chess Suduko</a>
+            <a src="#">Thermomiter Suduko</a>
+        </nav>
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>

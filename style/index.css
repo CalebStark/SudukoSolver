@@ -1,0 +1,40 @@
+/* Colors to Use: Header/footer: #eadcd9 Body: #d9eadc  Content: #dcd9ea*/
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.mainSquare {
+  height: 450px;
+  width: 450px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: auto;
+  border: black 10px solid;
+  justify-items: center;
+}
+  
+#largeSquare {
+  height: 150px;
+  border: Blue 1px solid;
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: auto;
+}
+  
+#miniSquare {
+  border: red 2px solid;
+}
+
+#squareInput {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+}
