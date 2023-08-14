@@ -4,13 +4,36 @@ html {
     height: 100%;
     width: 100%;
   }
-  
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   list-style-position: inside;
 }
 
+header {
+  padding: 10px 0px 50px 0px;
+  background-color: #eadcd9;
+}
+
+main {
+  background-color: #d9eadc;
+}
+
+footer {
+  background-color: #eadcd9;
+}
+
+nav a{
+  padding: 60px;
+}
+.puzzleBoard {
+  width: auto;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .mainSquare {
   height: 450px;
   width: 450px;
@@ -22,19 +45,23 @@ body {
 }
   
 #largeSquare {
-  height: 150px;
-  border: Blue 1px solid;
+  height: 146px;
+  border: black 2px solid;
   display: grid;
-  grid-template-columns: 50px 50px 50px;
+  grid-template-columns: 49px 49px 49px;
   grid-template-rows: auto;
 }
   
 #miniSquare {
-  border: red 2px solid;
+  border: gray 1px solid;
 }
 
-#squareInput {
-  width: 30px;
-  height: 30px;
-  padding: 0px;
+.squareInput {
+  font-size: 30px;
+  outline: none;
+  border: solid 0 #fff;
+  text-align: center;
+  margin: 0;
+  width: 44px;
+  height: 44px;
 }
