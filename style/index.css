@@ -1,4 +1,4 @@
-/* Colors to Use: Header/footer: #eadcd9 Body: #d9eadc  Content: #dcd9ea*/
+/* Colors to Use: Header/footer: #75d110 Body: #6c10d1  Content: #dcd9ea*/
 
 html {
     height: 100%;
@@ -9,19 +9,20 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   list-style-position: inside;
+  color: #000000;
 }
 
 header {
   padding: 10px 0px 50px 0px;
-  background-color: #eadcd9;
+  background-color: #10d1cc;
 }
 
 main {
-  background-color: #d9eadc;
+  background-color: #6c10d1;
 }
 
 footer {
-  background-color: #eadcd9;
+  background-color: #10d1cc;
 }
 
 nav a{
